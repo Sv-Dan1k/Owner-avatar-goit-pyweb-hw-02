@@ -1,0 +1,12 @@
+FROM python:3.12
+
+RUN apt-get update && apt-get install -y python3 python3-pip
+
+WORKDIR /app
+
+COPY personal_assistant.py /app/
+COPY requirements.txt /app/
+
+RUN pip install -r /app/requirements.txt
+
+ENTRYPOINT ["python3", "personal_assistant.py"]
