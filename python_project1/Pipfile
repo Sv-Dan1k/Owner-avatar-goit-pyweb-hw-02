@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python = "==3.12"
+distlib = "==0.3.8"
+filelock = "==3.15.1"
+pipenv = "==2024.0.1"
+platformdirs = "==4.2.2"
+setuptools = "==70.0.0"
+virtualenv = "==20.26.2"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
